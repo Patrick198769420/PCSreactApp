@@ -1,0 +1,178 @@
+/*---------------------------
+        General Styles
+-----------------------------*/
+
+body {
+  background-image: url('C:\Users\patri\OneDrive\Desktop\PatrickFiles\React\pcs1\src\images\agora2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  zoom: 75%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  padding: 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/*---------------------------
+        Navigation Bar
+-----------------------------*/
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  height: 70px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #333;
+  font-weight: bold;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: 2px solid #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: var(--bs-red);
+  color: #fff;
+  border-color: #fff;
+}
+
+nav a.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: auto;
+}
+
+.dropdown-menu {
+  font-size: 0.8rem;
+  margin-top: 0;
+  padding: 0.5rem 0;
+  z-index: 9999; /* add a higher z-index value */
+}
+
+.dropdown-menu a {
+  padding: 0.25rem 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    display: block !important;
+  }
+  
+  .dropdown-menu {
+    font-size: 0.8rem;
+    margin-top: 0;
+    padding: 0.5rem 0;
+    z-index: 9999; /* add a higher z-index value */
+  }
+  
+  .dropdown-menu a {
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+
+
+/*---------------------------
+        Card Grid
+-----------------------------*/
+
+.card-title,
+.card-text {
+  color: #333;
+}
+
+.card {
+  opacity: 0.9; /* make the cards semi-transparent */
+  transition: all 0.2s ease-in-out; /* add a transition effect to the hover effect */
+  margin-top: 100px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* wrap the cards */
+  justify-content: center;
+  height: 100vh;
+  gap: 10px;
+  
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+  
+  .card-title,
+  .card-text {
+  color: #333;
+  }
+
+
+/*---------------------------
+        Button
+-----------------------------*/
+
+button {
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
